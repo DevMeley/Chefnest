@@ -2,7 +2,7 @@ import chef1 from "../assets/Chef1.png";
 import chef2 from "../assets/Chef2.png";
 import chef3 from "../assets/Chef3.png";
 // import chef4 from "../assets/Chef4.png"
-import { Calendar, ChefHat, CookingPot, Utensils } from "lucide-react";
+import { Calendar, ChefHat, CookingPot, Shield, Star, Utensils } from "lucide-react";
 
 export const featuredChefs = [
   {
@@ -85,5 +85,26 @@ export const work = [
     title: "Book & Enjoy",
     description:
       "Confirm your booking, pay securely, and enjoy an unforgettable culinary experience.",
+  },
+];
+
+export const trusts = [
+  {
+    icon: Shield,
+    title: "Verified Professionals",
+    description:
+      "Every chef undergoes background checks and credential verification.",
+  },
+  {
+    icon: Star,
+    title: "Authentic Reviews",
+    description:
+      "Read genuine feedback from verified clients after completed services.",
+  },
+  {
+    icon: Calendar,
+    title: "Secure Booking",
+    description:
+      "Payment protection and cancellation policies that keep you covered.",
   },
 ];

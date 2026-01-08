@@ -9,7 +9,10 @@ import {
   ChefHatIcon,
   Star,
   ArrowRight,
-  MapPin
+  MapPin,
+  Instagram,
+  Facebook,
+  Twitter
 } from "lucide-react";
 
 export const icons = {
@@ -23,5 +26,8 @@ export const icons = {
   ChefHatIcon: ChefHatIcon,
   Star,
   ArrowRight:ArrowRight,
-  MapPin:MapPin
+  MapPin:MapPin,
+  Instagram:Instagram,
+  Facebook:Facebook,
+  Twitter:Twitter
 };

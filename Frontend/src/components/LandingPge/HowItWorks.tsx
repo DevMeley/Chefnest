@@ -4,16 +4,16 @@ export default function HowItWorks() {
   return (
     <section className="bg-foreground mt-20 p-10">
       <div className="text-center pb-15">
-        <h1 className="text-3xl lg:text-5xl font-bold text-accent-foreground">
+        <h1 className="text-3xl lg:text-4xl font-bold text-accent-foreground pb-5">
           How Chefnest Works
         </h1>
-        <p className="text-lg lg:text-3xl text-accent-foreground/50">
+        <p className="text-lg lg:text-2xl text-accent-foreground/50">
           Book your perfect chef in three simple steps
         </p>
       </div>
       <div className="text-accent-foreground text-center flex flex-col gap-8 lg:flex-row">
         {work.map((item, index) => (
-          <div className="relative flex flex-col items-center gap-3">
+          <div  className="relative flex flex-col items-center gap-3">
             <div className="bg-primary rounded-full w-16 h-16 flex items-center gap-2">
               <p className="text-center p-5">{item.step}</p>
             </div>
