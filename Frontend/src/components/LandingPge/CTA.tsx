@@ -6,7 +6,7 @@ export default function CTA() {
       <div className="container text-primary-foreground flex flex-col gap-6">
         <h1 className="text-4xl lg:text-5xl">Ready to enjoy Culinary Magic?</h1>
         <p className="text-lg lg:3xl">Whether you're a chef looking to grow your business or a 
-          client seeking exceptional dining experiences, ChefConnect is your gateway to culinary excellence.</p>
+          client seeking exceptional dining experiences, Chefnest is your gateway to culinary excellence.</p>
       </div>
       <div className="flex flex-col lg:flex-row gap-4 justify-center">
         <Button variant="secondary" size="lg" className="text-lg text-white">Find a chef</Button>

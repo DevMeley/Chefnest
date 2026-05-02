@@ -73,7 +73,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/10 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-primary-foreground/50 font-body text-sm">
-          © {new Date().getFullYear()} ChefConnect. All rights reserved.
+          © {new Date().getFullYear()} Chefnest. All rights reserved.
         </p>
         <p className="text-primary-foreground/50 font-body text-sm">
           Crafted with passion for culinary excellence

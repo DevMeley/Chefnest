@@ -12,7 +12,9 @@ import {
   MapPin,
   Instagram,
   Facebook,
-  Twitter
+  Twitter,
+  Users,
+  User
 } from "lucide-react";
 
 export const icons = {
@@ -29,5 +31,7 @@ export const icons = {
   MapPin:MapPin,
   Instagram:Instagram,
   Facebook:Facebook,
-  Twitter:Twitter
+  Twitter:Twitter,
+  Users:Users,
+  User:User
 };

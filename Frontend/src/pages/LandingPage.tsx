@@ -12,9 +12,15 @@ export default function LandingPage() {
     <div>
       <Header />
       <Hero />
-      <Service />
-      <FeatureChefs />
-      <HowItWorks />
+      <section id="service">
+        <Service />
+      </section>
+      <section id="featured-chefs">
+        <FeatureChefs />
+      </section>
+      <section id="how-it-works">
+        <HowItWorks />
+      </section>
       <Trust />
       <CTA />
       <Footer />

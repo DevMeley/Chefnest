@@ -15,23 +15,31 @@ export default function Header() {
           <h1 className="text-2xl text-primary font-extrabold">Chefnest</h1>
         </Link>
         <ul className="hidden lg:flex justify-between gap-8 text-primary/50">
-          <li className=" hover:text-primary transition-colors font-medium">
-            Find a chef
-          </li>
-          <li className=" hover:text-primary transition-colors font-medium">
-            How is work
-          </li>
-          <li className=" hover:text-primary transition-colors font-medium">
-            Service
-          </li>
+          <Link to="#featured-chefs">
+            <li className=" hover:text-primary transition-colors font-medium">
+              Find a chef
+            </li>
+          </Link>
+          <Link to="#how-it-works">
+            <li className=" hover:text-primary transition-colors font-medium">
+              How is work
+            </li>
+          </Link>
+          <Link to="#service">
+            <li className=" hover:text-primary transition-colors font-medium">
+              Service
+            </li>
+          </Link>
         </ul>
         <div className="hidden lg:flex justify-between gap-6">
           <Button variant="link" size="lg">
             Sign in
           </Button>
-          <Button variant="default" size="lg">
-            Sign up
-          </Button>
+          <Link to="/signup">
+            <Button variant="default" size="lg">
+              Sign up
+            </Button>
+          </Link>
         </div>
         <span
           className="lg:hidden"
@@ -43,23 +51,31 @@ export default function Header() {
       {menuOpen && (
         <div className="absolute z-50 w-full left-0 top-full flex flex-col gap-20 px-5 py-10 bg-background/90 backdrop-blur-md animate-fade-in">
           <ul className="flex flex-col justify-between gap-8 text-primary/50 px-10 cursor-pointer">
-            <li className=" hover:text-primary transition-colors font-medium">
-              Find a chef
-            </li>
-            <li className=" hover:text-primary transition-colors font-medium">
-              How is work
-            </li>
-            <li className=" hover:text-primary transition-colors font-medium">
-              Service
-            </li>
+            <Link to="#featured-chefs" onClick={() => setIsMenuOpen(false)}>
+              <li className=" hover:text-primary transition-colors font-medium">
+                Find a chef
+              </li>
+            </Link>
+            <Link to="#how-it-works" onClick={() => setIsMenuOpen(false)}>
+              <li className=" hover:text-primary transition-colors font-medium">
+                How is work
+              </li>
+            </Link>
+            <Link to="#service" onClick={() => setIsMenuOpen(false)}>
+              <li className=" hover:text-primary transition-colors font-medium">
+                Service
+              </li>
+            </Link>
           </ul>
           <div className="flex flex-col justify-between gap-6">
             <Button variant="link" size="lg">
               Sign in
             </Button>
-            <Button variant="default" size="lg">
-              Sign up
-            </Button>
+            <Link to="/signup">
+              <Button variant="default" size="lg">
+                Sign up
+              </Button>
+            </Link>
           </div>
         </div>
       )}
