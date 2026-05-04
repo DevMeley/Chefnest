@@ -14,7 +14,7 @@ import {
   Facebook,
   Twitter,
   Users,
-  User
+  User,
 } from "lucide-react";
 
 export const icons = {

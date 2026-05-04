@@ -5,7 +5,7 @@ import { Input } from "../ui/input";
 
 export default function SignupForm() {
   return (
-    <form className="pt-5 flex flex-col gap-5">
+    <div className="pt-5 flex flex-col gap-8">
       <p>I want to join as a...</p>
       {/* selection buttons */}
       <div className="flex justify-between gap-5">
@@ -43,8 +43,8 @@ export default function SignupForm() {
         </div>
       </div>
       {/* form field */}
-      <form className="space-y-5">
-        <div className="space-y-2">
+      <form className="space-y-6">
+        <div className="space-y-3">
           <label htmlFor="text">Fullname</label>
           <Input type="text" placeholder="Fullname" className="h-10" />
         </div>
@@ -55,17 +55,40 @@ export default function SignupForm() {
         <div className="space-y-2">
           <label htmlFor="Password">Fullname</label>
           <Input type="password" placeholder="Password" className="h-10" />
-          <p className="text-sm">Must be at least 8 characters with a number and symbol</p>
+          <p className="text-sm">
+            Must be at least 8 characters with a number and symbol
+          </p>
         </div>
-        <div className="flex justify-between">
-          <Input type="checkbox"className=""/>
-          <div className="">
-            <p className="">
-              I agree to the <Link to="">Terms of Service</Link> and <Link to="">Privacy Policy</Link>
-            </p>
-          </div>
+        <div className="flex justify-between gap-4">
+          <Input type="checkbox" className="size-5" />
+          <p className="text-sm">
+            I agree to the{" "}
+            <Link to="" className="text-red-900">
+              Terms of Service
+            </Link>{" "}
+            and{" "}
+            <Link to="" className="text-red-900">
+              Privacy Policy
+            </Link>
+          </p>
         </div>
+        <Button size="lg" className="w-full h-10">
+          Create account
+        </Button>
       </form>
-    </form>
+      {/* Divider */}
+      <div className="relative">
+        <div className="absolute inset-0 flex items-center">
+          <div className="w-full border-t border-cream-200" />
+        </div>
+        <div className="relative flex justify-center text-sm">
+          <span className="px-4 bg-background text-muted-foreground">
+            Or continue with
+          </span>
+        </div>
+      </div>
+      <Button variant="outline" size="lg" className="w-full">Google</Button>
+      <div className="text-center">Aready have an account?<span className="text-red-900"> Sign in</span></div>
+    </div>
   );
 }

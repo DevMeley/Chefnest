@@ -4,7 +4,7 @@ import SignupForm from "@/components/forms/SignupForm";
 
 export default function Signup() {
   return (
-    <section className="min-h-100 flex flex-col justify-center items-center">
+    <section className="min-h-100 py-10 flex flex-col justify-center items-center">
       <div className="px-10">
         <Link to="/" className="flex items-center justify-center gap-2">
           <img src={Logo} className="w-15 h-15" alt="Logo" />
