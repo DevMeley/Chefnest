@@ -4,6 +4,7 @@ import Chef2 from "../../assets/Chef2.png";
 import Chef3 from "../../assets/Chef3.png";
 import Icon from "../icon";
 import { Button } from "../ui/button";
+import { Link } from "react-router";
 
 export default function Hero() {
   return (
@@ -28,14 +29,16 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex gap-8">
-          <Button
-            variant="outline"
-            size="lg"
-            className="lg:text-lg lg:font-bold"
-          >
-            <Icon name="Search" />
-            Find a chef
-          </Button>
+          <Link to="/chefs">
+            <Button
+              variant="outline"
+              size="lg"
+              className="lg:text-lg lg:font-bold"
+            >
+              <Icon name="Search" />
+              Find a chef
+            </Button>
+          </Link>
           <Button
             variant="default"
             size="lg"

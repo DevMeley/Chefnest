@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Icon from "../icon";
 import { Badge } from "./badge";
 import { Card, CardContent } from "./card";
@@ -15,7 +16,7 @@ interface ChefCardProps {
 }
 
 export default function ChefCard({
-  //   id,
+  id,
   name,
   //   specialty,
   location,
@@ -26,10 +27,14 @@ export default function ChefCard({
   cuisines,
 }: ChefCardProps) {
   return (
-    <div>
+    <Link to={`/chef/${id}`} className="block h-full">
       <Card className="overflow-hidden group">
         <div className="relative overflow-hidden ">
-          <img src={imageUrl} alt="" className="w-full h-full object-cover" />
+          <img
+            src={imageUrl}
+            alt={name}
+            className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
           <div className="absolute inset-0 bg-linear-to-t from-foreground/60 via-transparent to-transparent" />
           {/* Price range */}
           <div className="absolute top-4 right-4">
@@ -58,7 +63,9 @@ export default function ChefCard({
           </p>
           <div className="flex items-center gap-2">
             {cuisines.slice(0, 3).map((cuisine) => (
-              <Badge variant="outline">{cuisine}</Badge>
+              <Badge key={cuisine} variant="outline">
+                {cuisine}
+              </Badge>
             ))}
             {cuisines.length > 3 && (
               <Badge variant="outline" className="font-body text-xs">
@@ -68,6 +75,6 @@ export default function ChefCard({
           </div>
         </CardContent>
       </Card>
-    </div>
+    </Link>
   );
 }

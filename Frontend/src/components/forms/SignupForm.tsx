@@ -88,7 +88,7 @@ export default function SignupForm() {
         </div>
       </div>
       <Button variant="outline" size="lg" className="w-full">Google</Button>
-      <div className="text-center">Aready have an account?<span className="text-red-900"> Sign in</span></div>
+      <div className="text-center">Aready have an account?<Link to="/signin" className="text-red-900"> Sign in</Link></div>
     </div>
   );
 }

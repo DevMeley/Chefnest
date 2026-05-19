@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { featuredChefs } from "@/constant/constant";
 import Icon from "../icon";
 import { Button } from "../ui/button";
@@ -14,16 +15,18 @@ export default function FeatureChefs() {
             and outstanding reviews.
           </p>
         </div>
-        <Button
-          variant="outline"
-          size="lg"
-          className="text-primary hover:bg-primary hover:text-white border-primary border-3"
-        >
-          View All Chefs <Icon name="ArrowRight" />
-        </Button>
+        <Link to="/chefs">
+          <Button
+            variant="outline"
+            size="lg"
+            className="text-primary hover:bg-primary hover:text-white border-primary border-3"
+          >
+            View All Chefs <Icon name="ArrowRight" />
+          </Button>
+        </Link>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 content-center gap-6 lg:gap-8 mt-15">
-        {featuredChefs.map((chef) => (
+        {featuredChefs.slice(0, 3).map((chef) => (
           <ChefCard key={chef.id} {...chef} />
         ))}
       </div>

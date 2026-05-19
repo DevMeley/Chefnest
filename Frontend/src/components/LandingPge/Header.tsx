@@ -15,7 +15,7 @@ export default function Header() {
           <h1 className="text-2xl text-primary font-extrabold">Chefnest</h1>
         </Link>
         <ul className="hidden lg:flex justify-between gap-8 text-primary/50">
-          <Link to="#featured-chefs">
+          <Link to="/chefs">
             <li className=" hover:text-primary transition-colors font-medium">
               Find a chef
             </li>

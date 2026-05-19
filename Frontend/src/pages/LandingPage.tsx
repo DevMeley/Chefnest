@@ -15,7 +15,7 @@ export default function LandingPage() {
       <section id="service">
         <Service />
       </section>
-      <section id="featured-chefs">
+      <section >
         <FeatureChefs />
       </section>
       <section id="how-it-works">
