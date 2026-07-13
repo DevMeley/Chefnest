@@ -11,7 +11,7 @@ import { featuredChefs } from "@/constant/constant";
 import SelectControl from "@/components/ui/SelectControl";
 
 
-export default function Chefs() {
+export default function Chefs() { 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
